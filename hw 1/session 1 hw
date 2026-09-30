@@ -1,0 +1,63 @@
+
+
+let brightness = 100;
+let lightsOn = true;
+
+function setup() {
+  createCanvas(600, 600);
+}
+
+function draw() {
+  background(30, 30, 50);
+
+  // Increase brightness over time, then start again
+  brightness = brightness + 25;
+
+  if (brightness > 255) {
+    brightness = 50;
+  }
+
+  // Truss
+  stroke(150);
+  strokeWeight(4);
+  line(50, 50, 550, 50);
+
+  // Two rectangular lights
+  stroke(0);
+  strokeWeight(2);
+  fill(80);
+  rect(130, 50, 40, 30);
+  rect(430, 50, 40, 30);
+
+  // Light beams
+  if (lightsOn) {
+    noStroke();
+    fill(255, 220, 100);
+
+    // Flicker while the mouse moves
+    if (mouseX != pmouseX || mouseY != pmouseY) {
+      fill(brightness, brightness, 50);
+    }
+
+    triangle(150, 80, 70, 400, 270, 400);
+    triangle(450, 80, 330, 400, 530, 400);
+  }
+
+  // Stage
+  stroke(0);
+  strokeWeight(2);
+  fill(100);
+  rect(50, 400, 500, 100);
+
+  // Microphone stand
+  stroke(220);
+  strokeWeight(5);
+  line(300, 300, 300, 400);
+  line(275, 400, 325, 400);
+
+  // Microphone
+  stroke(0);
+  strokeWeight(1);
+  fill(180);
+  ellipse(300, 290, 20, 35);
+}
