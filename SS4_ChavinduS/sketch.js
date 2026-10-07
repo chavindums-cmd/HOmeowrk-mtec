@@ -41,13 +41,13 @@ function draw() {
 
   if (current === 1) {
     image(photo1, width / 2, 200, 600, 400);
-    text('Photo 1: Morning', width / 2, 430);
+    
   } else if (current === 2) {
     image(photo2, width / 2, 200, 600, 400);
-    text('Photo 2: Afternoon', width / 2, 430);
+    
   } else {
     image(photo3, width / 2, 200, 600, 400);
-    text('Photo 3: Evening', width / 2, 430);
+    
   }
 
   
