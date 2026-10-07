@@ -2,17 +2,12 @@
   Name: Chavindu S.
   Title: SS3 - Circle Trail
  
-  Instructions:
   - Move the mouse RIGHT and the circle grows.
   - Move the mouse LEFT and the circle shrinks.
   - Keep the mouse still and the circle stays the same size.
   - CLICK to change the circle to a random color.
   - Press the C key to clear the canvas.
- 
-  Theme:
-  A circle that leaves a path wherever it goes. Moving right
-  makes it bigger, moving left makes it smaller, and every click
-  gives it a surprise color, so no two drawings look the same.
+
 */
  
 // my variables
