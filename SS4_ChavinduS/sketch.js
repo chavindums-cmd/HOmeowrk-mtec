@@ -35,8 +35,7 @@ function draw() {
     nextPhoto();
   }
 
-  // show the current photo and its caption
-  fill(255);
+  // show the current photo 
   textSize(20);
 
   if (current === 1) {
