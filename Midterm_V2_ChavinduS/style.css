@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #141414;
+}
+
+canvas {
+  display: block;
+}
+
+/* hide p5's spinning loading circle (the sketch shows its own loading bar) */
+.loading-indicator {
+  display: none !important;
+}
