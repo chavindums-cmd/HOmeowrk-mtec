@@ -7,9 +7,8 @@
   //- The red ring is the S wave (slower).
   //- Press C to clear all the earthquakes.
  
-  //Image credit: got the map from wikipedia, public domain. The map is a Mercator projection of the world.
-
- 
+  //Image credit: got the map from wikipedia, public domain. 
+  
 let worldImg; // the map picture
  
 // ARRAYS: one entry per earthquake
