@@ -39,12 +39,12 @@ function draw() {
     noFill();
     stroke(255, 220, 80);
     strokeWeight(1);
-    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 3);
+    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 1);
  
     // S wave grows more slowly 
     stroke(255, 90, 70);
     strokeWeight(3);
-    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 1.9);
+    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 0.65);
  
     // The epicentre of the earthquake
     noStroke();
