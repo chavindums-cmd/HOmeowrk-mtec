@@ -21,7 +21,7 @@ function draw() {
     for (let y = 30; y < height; y += 60) {
       let d = dist(x, y, mouseX, mouseY);
  
-      // CONDITIONAL: dots close to the mouse are big and coloured
+      // CONDITONAL: dots close to the mouse are big and coloured
       if (d < 150) {
         fill(dotColor);
         ellipse(x, y, 50 - d / 4);
@@ -40,7 +40,7 @@ function draw() {
   }
 }
  
-// Click: pick a new random colour
+// Click:pick a new random colour
 function mousePressed() {
   dotColor = color(random(255), random(255), random(255));
 }
