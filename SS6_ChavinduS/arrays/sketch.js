@@ -1,14 +1,14 @@
- // Name :  Chavindu S
- //Title: P and S Waves
+// Name :  Chavindu S
+//Title: P and S Waves
  
-  //Instructions for the user:
-  //- Click anywhere on the map to start an earthquake.
-  //- The yellow ring is the P wave (fast).
-  //- The red ring is the S wave (slower).
-  //- Press C to clear all the earthquakes.
+//Instructions for the user:
+//Click anywhere on the map to start an earthquake.
+//The yellow ring is the P wave (fast).
+//The red ring is the S wave (slower).
+//Press C to clear all the earthquakes.
  
-  //Image credit: got the map from wikipedia, public domain. 
-  
+//Image credit: got the map from wikipedia, public domain. 
+
 let worldImg; // the map picture
  
 // ARRAYS: one entry per earthquake
