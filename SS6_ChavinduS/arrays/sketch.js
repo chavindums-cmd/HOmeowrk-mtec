@@ -30,7 +30,8 @@ function draw() {
   image(worldImg, 0, 0, width, height);
  
   // Go through the arrays and draw each earthquake
-  for (let i = 0; i < quakeX.length; i++) {  // quakeXlength is how many earthquakes exist. The loop runs once per earthquake, with i as its position in the arrays. 
+  for (let i = 0; i < quakeX.length; i++) {  // quakexlength is how many earthquakes exist. 
+  // The loop runs once per earthquake, with i as its position in the arrays. 
     // With no earthquake yet, the length is 0 and the loop doesn’t run at all.
     quakeAge[i] += 1; // one frame older
  
@@ -38,12 +39,12 @@ function draw() {
     noFill();
     stroke(255, 220, 80);
     strokeWeight(1);
-    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 6);
+    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 3);
  
-    // S wave: grows more slowly
+    // S wave grows more slowly 
     stroke(255, 90, 70);
     strokeWeight(3);
-    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 4);
+    ellipse(quakeX[i], quakeY[i], quakeAge[i] * 1.9);
  
     // The epicentre of the earthquake
     noStroke();
