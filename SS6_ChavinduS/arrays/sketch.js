@@ -7,7 +7,7 @@
 //The red ring is the S wave (slower).
 //Press C to clear all the earthquakes.
  
-//Image credit: got the map from wikipedia, public domain. 
+//Image credit: got the map from wikipedia 
 
 let worldImg; // the map picture
  
@@ -30,8 +30,8 @@ function draw() {
   image(worldImg, 0, 0, width, height);
  
   // Go through the arrays and draw each earthquake
-  for (let i = 0; i < quakeX.length; i++) {  // quakeX.length is how many earthquakes exist. The loop runs once per earthquake, with i as its position in the arrays. 
-    // With no earthquakes yet, the length is 0 and the loop doesn’t run at all.
+  for (let i = 0; i < quakeX.length; i++) {  // quakeXlength is how many earthquakes exist. The loop runs once per earthquake, with i as its position in the arrays. 
+    // With no earthquake yet, the length is 0 and the loop doesn’t run at all.
     quakeAge[i] += 1; // one frame older
  
     // P wave: grows 3 pixels per frame (fast)
